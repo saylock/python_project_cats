@@ -22,11 +22,13 @@ function App() {
 
   // Сохранить мем
   const saveMeme = async () => {
-    await fetch('http://localhost:5000/api/memes', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ image_url: cat.url, text })
-    });
+    if (text.trim()) {
+      await fetch('http://localhost:5000/api/memes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image_url: cat.url, text })
+      });
+    }
     fetchMemes();
     // Load new cat image
     fetchCat();

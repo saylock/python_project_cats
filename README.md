@@ -56,7 +56,8 @@ docker-compose down -v
 Go to `localhost:80`  
 I will load random image/gif with a cat and you are required to type in funny prompt below it. After you press Save button (or press "Enter") it will be saved into local database and appear in Meme Gallery in the bottom section.
 Interface should look like this:  
-![UI Example](./UIExample.png)
+![UI Example](./UIExample.png)  
+To skip not funny image just press Enter with empty text prompt.
 
 ## Debug
 
