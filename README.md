@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./frontend/public/logo192.png" alt="Project Icon" width="100" />
+</p>
+
 # 🐱 Cat Meme Generator
 
 A local, dockerized pet project that lets you create cat memes via a Flask backend (Python) with PostgreSQL, and view them through a simple web front‑end.
