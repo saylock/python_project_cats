@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.meme-creator {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* center items horizontally */
+  gap: 10px;              /* optional: space between image and input */
+}

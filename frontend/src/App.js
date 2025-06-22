@@ -28,6 +28,10 @@ function App() {
       body: JSON.stringify({ image_url: cat.url, text })
     });
     fetchMemes();
+    // Load new cat image
+    fetchCat();
+    // Clear input field
+    setText("");
   };
 
   // При загрузке страницы
@@ -46,6 +50,11 @@ function App() {
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
+            onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              saveMeme();
+            }}}
             placeholder="Введите подпись"
           />
           <button onClick={saveMeme}>Сохранить мем</button>
